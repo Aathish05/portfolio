@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Styling for the profile image */
+.profile-image {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height to match the width */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits the circular shape without distortion */
+  margin-bottom: 20px;
+}
+
+
+/* Body Background */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #e0e0e0; /* Neutral background for whole page */
+}
+
+/* Navigation Bar */
+header {
+  background-color: #333333;
+  padding: 1rem;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  font-size: 1.8rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #4a90e2;
+}
+
+/* Hero Section with Animated Gradient */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4a90e2, #1f1f1f);
+  background-size: 500% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.social-links a {
+  color: #61dafb;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #ffffff;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* About Section with Subtle Pattern */
+#about {
+  padding: 2rem;
+  background-color: #ffffff;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f8f9fa,
+    #f8f9fa 10px,
+    #e9ecef 10px,
+    #e9ecef 20px
+  );
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#about p {
+  margin-top: 1rem;
+  color: #444;
+}
+
+/* Projects Section with Dark Background */
+#projects {
+  padding: 2rem;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  text-align: center;
+}
+.project-card {
+  background: #2b2b2b;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.project-link:hover {
+  color: #ffffff;
+}
+
+/* Skills Section with Light Background */
+#skills {
+  padding: 2rem;
+  background-color:#ADD8E6;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#skills ul {
+  list-style: disc inside;
+  padding: 1rem;
+  color: #333;
+}
+#skills ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Experience Section with Gradient Background */
+#experience {
+  padding: 2rem;
+  background: linear-gradient(to right, #4a90e2, #1f1f1f);
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section with Light Grey Background */
+#contact {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+input, textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+button {
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #0073e6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333333;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
